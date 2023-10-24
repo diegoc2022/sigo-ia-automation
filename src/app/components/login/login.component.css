@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.content-form{   
+    position:absolute;
+    width:100%;    
+    height: 100vh;    
+    
+}
+
+.form-login{
+    position:relative;
+    width: 330px;
+    height: 370px;    
+    margin: 10% auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);    
+}
+
+.btn-w-h{
+    width: 130px;  
+    height: 48px; 
+    border-radius: 5px;
+}
+
+
+.img-login{  
+    width: 290px; 
+    height: 50px;
+    border-radius: 15px;
+    display: block;
+    margin-left:5px;    
+}
+
+.text-height{
+    height: 4vh;
+}
+
+.msg-text-color{
+    color: red;
+}
+

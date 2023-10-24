@@ -1,0 +1,46 @@
+<div class="container-fluid">
+     <div class="content-form">
+        <div class="form-login">
+            <div class="container ">                
+                <div class="row">
+                  <div class="card mt-2 border-0"></div>
+                  <div class="col-12 md:col-4">
+                    <div class="card-header">       
+                        <img src="../assets/img/logo.jpg" alt="img-login" class="img-login">       
+                    </div>
+                  </div>                  
+                </div> 
+                <div class="card mt-4 border-0"></div>                
+                <form [formGroup]="formLogin"> 
+                    <div class="row">                         
+                        <div class="col-12 md:col-4">
+                            <div class="field p-fluid mb-3">
+                                <label for="user" class="form-label mb-2">Nombre de usuario</label>
+                                <input type="text" class="form-control form-control-sm text-height p-2 ng-invalid ng-dirty" id="user" placeholder="Nombre de usuario" formControlName="user" autocomplete="false" aria-describedby="user-help">
+                                <small id="user-help" class="p-error msg-text-color" *ngIf="!message">Las credenciales son inválidas</small>
+                            </div>
+                        </div> 
+                    </div> 
+                    <div class="card mt-1 border-0"></div>                  
+                    <div class="row">   
+                        <div class="col-12 md:col-4">                            
+                            <div class="mb-3">
+                                <label for="password" class="form-label mb-2">Contraseña</label>
+                                <input id="password" type="password" class="form-control form-control-sm text-height p-2" placeholder="Contraseña" pInputText formControlName="passw"/>                                
+                            </div>
+                        </div> 
+                    </div> 
+                    <div class="card mt-3 border-0"></div>                   
+                    <div class="row">   
+                        <div class="col-12 md:col-4 mb-3">                           
+                            <div class="d-md-flex justify-content-md-end">
+                                <button type="submit" class="btn-w-h btn-primary text-white" (click)="funcLogin()">Ingresar</button>
+                            </div>
+                        </div> 
+                    </div>          
+                </form>
+              </div>                     
+        </div>    
+    </div>   
+</div>
+

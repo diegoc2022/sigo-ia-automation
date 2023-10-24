@@ -1,0 +1,78 @@
+<div class="container-fluid2">
+<div class="card shadow p-2 mb-1 bg-body rounded " style="height: 60px;">     
+    <p-menubar>
+        <ng-template pTemplate="start">
+            <img src="../../../assets/img/sigo_logo.png" height="30" class="mt-1"/>
+        </ng-template>        
+        <ng-template pTemplate="end">          
+           <span class="mt-3 me-4">User: diegoc</span>  
+           <a href=""><span class="pi pi-user me-4" style="font-size: 1rem"></span></a>          
+           <div class="btn-group">            
+            <span class="pi pi-th-large me-2 mb-1" style="font-size: 1rem" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false"></span> 
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+            </ul>
+          </div>                   
+        </ng-template>                       
+    </p-menubar>    
+</div> 
+<div class="content-home"> 
+<div class="content-voice">                                        
+                <div class="row">                       
+                    <div class="col-12 md:col-4">  
+                        <form [formGroup]="form" >                           
+                        <div class="field field p-fluid">                                   
+                            <div class="input-group mt-3"> 
+                                <p-progressSpinner *ngIf="loading" [style]="{'height': '40px','width':'40px'}" class="me-2 mt-2"></p-progressSpinner>                                   
+                                <input id="text" x-webkit-speech speech type="text" class="form-control form-control-lg me-1 mt-0" placeholder="Mencione un proceso a realizar" aria-describedby="text2-help" formControlName="msg" (clic)="startRecording()" value="{{voiceRecognition.text}}"/>                                    
+                                <button type="submit" class="btn btn-outline-primary bi bi-mic me-1" (click)="startRecording()" title="Iniciar"></button>  
+                                <button type="submit" class="btn btn-outline-success bi bi-arrow-90deg-up me-1" (click)="stopRecording()" title="Enviar"></button>
+                                <button type="submit" class="btn btn-outline-secondary bi bi-trash" (click)="funcClear()" title="Borrar"></button>                                                                                                                                        
+                            </div>                                                        
+                            <small id="text2-help" class="p-error msg-text-color" *ngIf="!message"></small>                            
+                        </div>                             
+                    </form>                       
+                    </div> 
+                </div>   
+                <hr> 
+                <h4 style="color:#086bb5;" *ngIf="table">Guías generadas:</h4>
+                <table class="table table-bordered" style="width:1000px" *ngIf="table">
+                    <thead>
+                        <tr>
+                       <th style="width:20px">Id</th>
+                          <th style="width:20px">Guía</th>
+                          <th style="width:20px">Unidades</th>
+                          <th style="width:20px">Origen</th>
+                          <th style="width:20px">Destino</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td style="color:#086bb5;"><b>20025049150</b></td>
+                          <td>5</td>
+                          <td>Medellin</td>
+                          <td>Bogota</td>
+                        </tr> 
+                        <tr>
+                            <th scope="row">2</th>
+                            <td style="color:#086bb5;"><b>20025049151</b></td>
+                            <td>5</td>
+                            <td>Medellin</td>
+                            <td>Cali</td>
+                          </tr>  
+                          <tr>
+                            <th scope="row">3</th>
+                            <td style="color:#086bb5;"><b>20025049152</b></td>
+                            <td>5</td>
+                            <td>Medellin</td>
+                            <td>Pereira</td>
+                          </tr>                               
+                </table>                   
+        </div>       
+    </div>          
+</div>  
+
+

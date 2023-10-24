@@ -1,0 +1,36 @@
+
+.content-home{   
+    position:fixed; 
+    width:100%;    
+    height: 89vh; 
+    margin-top: 0%;   
+}
+
+.content-voice{
+    position:relative;   
+    width:99%;
+    height: 105px;    
+    margin: 0% auto;     
+    border-radius: 5px;  
+    border: 0px solid #9f9f9f;   
+}
+
+.content-table{
+    position: relative;   
+    width:99%;
+    height:72vh;    
+    margin: 0.1% auto;   
+    border-radius: 5px;    
+    border: 1px solid #9f9f9f;    
+}
+
+a{    
+    color: black;
+}
+.msg-text-color{
+    color: red;
+}
+
+.otro{
+    background: blue;
+}
