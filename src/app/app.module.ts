@@ -8,6 +8,7 @@ import {MenubarModule} from 'primeng/menubar';
 import {MenuModule} from 'primeng/menu';
 import {ButtonModule} from 'primeng/button';
 import {ProgressSpinnerModule} from 'primeng/progressspinner';
+import { AccordionModule } from 'primeng/accordion';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +16,7 @@ import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/HomeComponent';
 import { ErrorComponent } from './components/error/error.component';
 import {InputTextModule} from 'primeng/inputtext';
+
 
 @NgModule({
   declarations: [
@@ -35,6 +37,7 @@ import {InputTextModule} from 'primeng/inputtext';
     MenuModule,  
     ButtonModule, 
     ProgressSpinnerModule,
+    AccordionModule,
     ToastrModule.forRoot({      
       timeOut: 2000,      
       positionClass: 'toast-bottom-right',
